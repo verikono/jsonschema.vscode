@@ -1,0 +1,20 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.com/product.schema.json",
+    "title": "Visual Studio Code : settings.json",
+    "description": "Visual Studio Code : settings.json",
+    "type": "object",
+    "properties": {
+        "fileMatch": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+        },
+        "url": {
+            "type": "string"
+        }
+    }
+}

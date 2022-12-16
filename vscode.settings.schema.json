@@ -1,9 +1,22 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "definitions": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.com/product.schema.json",
+    "title": "Visual Studio Code : settings.json",
+    "description": "Visual Studio Code : settings.json",
+    "type": "object",
+    "properties": {
         "editor.colorDecorators" : {
-            "type": "boolean",
-            "$comment": "Enable/Disable colour decorators which are a palette in from of a colour declaration such as #fff"
+            "description": "Enable/Disable colour decorators which are a palette in from of a colour declaration such as #fff",
+            "type": "boolean"
+        },
+        "editor.fontWeight": {
+            "description": "a font weight 100-900 in increments of 100 a higher number is a bolder font",
+            "type": "string"
+        },
+        "json.schemas": {
+            "description": "todo",
+            "type": "array",
+            "items": "./json/schemas.schema.json"
         }
     }
 }
