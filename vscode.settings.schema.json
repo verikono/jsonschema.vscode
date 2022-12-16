@@ -16,7 +16,7 @@
         "json.schemas": {
             "description": "todo",
             "type": "array",
-            "items": "./json/schemas.schema.json"
+            "items": { "$ref": "json/schemas.schema.json" }
         }
     }
 }
